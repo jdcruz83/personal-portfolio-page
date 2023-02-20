@@ -45,6 +45,14 @@ p {
     margin: 0;
 }
 
+.project-resume {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
 #navbar {
     position: fixed;
 }
