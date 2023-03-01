@@ -196,6 +196,11 @@ footer {
     scroll-behavior: smooth;
   }
 
+  footer {
+    height: fit-content;
+    line-height: 1.5;
+  }
+
   label {
     display: block;
     cursor: pointer;
