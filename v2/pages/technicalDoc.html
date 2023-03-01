@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Documentation Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/technicalStyles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="headDiv">
+        <h1>HTML Documentation</h1>
+        <div class="titleImg">
+            <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
+        </div>
+    </div>
+    <nav id="navbar">
+        <header>Getting started</header>
+        <ul>
+            <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+            <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+            <li><a class="nav-link" href="#Entity_references">Entity references</a></li>
+            <li><a class="nav-link" href="#HTML_comments">HTML comments</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="What_is_HTML?">
+            <header>What is HTML?</header>
+            <article>
+                <p>HTML (Hypertext Markup Language) is a markup language that tells web browsers how to structure the
+                    web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML
+                    consists of a series of elements, which you use to enclose, wrap, or mark up different parts of
+                    content to make it appear or act in a certain way. The enclosing tags can make content into a
+                    hyperlink to connect to another page, italicize words, and so on. For example, consider the
+                    following line of text:
+                <p>My cat is very grumpy</p>
+                <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in
+                    a paragraph <code>&lt;p&gt;</code> element:</p>
+                <p><code>&lt;p&gt;</code>My cat is very grumpy<code>&lt;/p&gt;</code></p>
+                <p><b>Note:</b> Tags in HTML are not case-sensitive. This means they can be written in uppercase or
+                    lowercase. For example, a <code>&lt;title&gt;</code> tag could be written as
+                    <code>&lt;title&gt;</code>, <code>&lt;TITLE&gt;</code>, <code>&lt;Title&gt;</code>,
+                    <code>&lt;TiTlE&gt;</code>, etc., and it will work. However, it is best practice to write all tags
+                    in lowercase for consistency and readability.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_element">
+            <header>Anatomy of an HTML element</header>
+            <article>
+                <p>Let's further explore our paragraph element from the previous section:</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png"
+                    alt="Image of an HTML element explained">
+                <p>The anatomy of our element is:</p>
+                <ul>
+                    <li><b>The opening tag:</b> This consists of the name of the element (in this example, p for
+                        paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the
+                        element begins or starts to take effect. In this example, it precedes the start of the paragraph
+                        text.</li>
+                    <li><b>The content:</b> This is the content of the element. In this example, it is the paragraph
+                        text.</li>
+                    <li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward
+                        slash before the element name. This marks where the element ends. Failing to include a closing
+                        tag is a common beginner error that can produce peculiar results.</li>
+                </ul>
+                <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+                <h3>Nesting elements</h3>
+                <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our
+                    cat is very grumpy, we could wrap the word very in a <code>&lt;strong&gt;</code> element, which
+                    means that the
+                    word is to have strong(er) text formatting:</p>
+                <p><code>&lt;p&gt;</code>My cat is <code>&lt;strong&gt;</code>very<code>&lt;/strong&gt;</code> grumpy.
+                </p>
+                <p>There is a right and wrong way to do nesting. In the example above, we opened the p element first,
+                    then opened the strong element. For proper nesting, we should close the strong element first, before
+                    closing the p.</p>
+                <p>The following is an example of the wrong way to do nesting:</p>
+                <p><code>&lt;p&gt;</code>My cat is <code>&lt;strong&gt;</code>very
+                    grumpy.<code>&lt;/p&gt;&lt;/strong&gt;</code> <i class="fa fa-times" aria-hidden="true"></i>
+                <p>The tags have to open and close in a way that they are inside or outside one another. With the kind
+                    of overlap in the example above, the browser has to guess at your intent. This kind of guessing can
+                    result in unexpected results.</p>
+                <h3>Block versus inline elements</h3>
+                <p>There are two important categories of elements to know in HTML: block-level elements and inline
+                    elements.</p>
+                <ul>
+                    <li>Block-level elements form a visible block on a page. A block-level element appears on a new line
+                        following the content that precedes it. Any content that follows a block-level element also
+                        appears on a new line. Block-level elements are usually structural elements on the page. For
+                        example, a block-level element might represent headings, paragraphs, lists, navigation menus, or
+                        footers. A block-level element wouldn't be nested inside an inline element, but it might be
+                        nested inside another block-level element.</li>
+                    <li>Inline elements are contained within block-level elements, and surround only small parts of the
+                        document's content (not entire paragraphs or groupings of content). An inline element will not
+                        cause a new line to appear in the document. It is typically used with text, for example an
+                        &lt;a&gt; element creates a hyperlink, and elements such as <code>&lt;em&gt;</code> or
+                        <code>&lt;strong&gt;</code> create
+                        emphasis.
+                    </li>
+                </ul>
+                <h3>Empty Elements</h3>
+                <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements
+                    consist of a single tag, which is typically used to insert/embed something in the document. For
+                    example, the <code>&lt;img&gt;</code> element embeds an image file onto a page.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <article>
+                <p>Elements can also have attributes. Attributes look like this:</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png"
+                    alt="Attribute example">
+                <p>Attributes contain extra information about the element that won't appear in the content. In this
+                    example, the class attribute is an identifying name used to target the element with style
+                    information.</p>
+                <p>An attribute should have:</p>
+                <ul>
+                    <li>A space between it and the element name. (For an element with more than one attribute, the
+                        attributes should be separated by spaces too.)</li>
+                    <li>The attribute name, followed by an equal sign.</li>
+                    <li>An attribute value, wrapped with opening and closing quote marks.</li>
+                </ul>
+                <p>Another example of an element is <code>&lt;a&gt;</code>. This stands for anchor. An anchor can make
+                    the text it
+                    encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
+                <ul>
+                    <li><b>href:</b> This attribute's value specifies the web address for the link. For example:
+                        <code>href="https://www.mozilla.org/"</code>.
+                    </li>
+                    <li><b>title:</b> The title attribute specifies extra information about the link, such as a
+                        description of the page that is being linked to. For example,
+                        <code>title="The Mozilla homepage"</code>. This
+                        appears as a tooltip when a cursor hovers over the element.
+                    </li>
+                    <li><b>target:</b> The target attribute specifies the browsing context used to display the link. For
+                        example, <code>target="_blank"</code> will display the link in a new tab. If you want to display
+                        the linked
+                        content in the current tab, just omit this attribute.</li>
+                </ul>
+                <h3>Boolean attributes</h3>
+                <p>Sometimes you will see attributes written without values. This is entirely acceptable. These are
+                    called Boolean attributes. Boolean attributes can only have one value, which is generally the same
+                    as the attribute name. For example, consider the <u>disabled</u> attribute, which you can assign to
+                    form input elements. (You use this to disable the form input elements so the user can't make
+                    entries. The disabled elements typically have a grayed-out appearance.) For example:</p>
+                <p><code>&lt;input type="text" disabled="disabled"&gt;</code></p>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_document">
+            <header>Anatomy of an HTML document</header>
+            <article>
+                <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements
+                    combine to form an entire HTML page.</p>
+                <p>We have:</p>
+                <ol>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: The doctype. When HTML was young (1991-1992), doctypes were
+                        meant to act
+                        as links to a set of rules that the HTML page had to follow to be considered good HTML. More
+                        recently, the doctype is a historical artifact that needs to be included for everything else to
+                        work right. <code>&lt;!DOCTYPE html&gt;</code> is the shortest string of characters that counts
+                        as a valid
+                        doctype. That is all you need to know! </li>
+                    <p>More recently, the doctype is a historical artifact that needs to be included for everything else
+                        to work right. <code>&lt;!DOCTYPE html&gt;</code> is the shortest string of characters that
+                        counts as a valid
+                        doctype. That is all you need to know!</p>
+                    <li><code>&lt;html&gt;&lt;/html&gt;</code>: The <code>&lt;html&gt;</code> element. This element
+                        wraps all the content on the
+                        page. It is sometimes known as the root element.</li>
+                    <li><code>&lt;head&gt;&lt;/head&gt;</code>: The <code>&lt;head&gt;</code> element. This element acts
+                        as a container for
+                        everything you want to include on the HTML page, that isn't the content the page will show to
+                        viewers. This includes keywords and a page description that would appear in search results, CSS
+                        to style content, character set declarations, and more. You will learn more about this in the
+                        next article of the series.</li>
+                    <li><code>&lt;meta charset="utf-8"&gt;</code>: The <code>&lt;meta&gt;</code> element. This element
+                        represents metadata that
+                        cannot be represented by other HTML meta-related elements, like <code>&lt;base&gt;</code>,
+                        <code>&lt;link&gt;</code>,
+                        <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or <code>&lt;title&gt;</code>. The
+                        charset attributes sets the character set
+                        for your document to UTF-8, which includes most characters from the vast majority of human
+                        written languages. With this setting, the page can now handle any textual content it might
+                        contain. There is no reason not to set this, and it can help avoid some problems later.
+                    </li>
+                    <li><code>&lt;title&gt;&lt;/title&gt;</code>: The <code>&lt;title&gt;</code> element. This sets the
+                        title of the page, which
+                        is the title that appears in the browser tab the page is loaded in. The page title is also used
+                        to describe the page when it is bookmarked.</li>
+                    <li><code>&lt;body&gt;&lt;/body&gt;</code>: The <code>&lt;body&gt;</code> element. This contains all
+                        the content that displays
+                        on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+                    </li>
+                </ol>
+                <h3>Whitespace in HTML</h3>
+                <p>No matter how much whitespace you use inside HTML element content (which can include one or more
+                    space character, but also line breaks), the HTML parser reduces each sequence of whitespace to a
+                    single space when rendering the code. So why use so much whitespace? The answer is readability.</p>
+                <p>It can be easier to understand what is going on in your code if you have it nicely formatted. In our
+                    HTML we've got each nested element indented by two spaces more than the one it is sitting inside. It
+                    is up to you to choose the style of formatting (how many spaces for each level of indentation, for
+                    example), but you should consider formatting it.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Entity_references">
+            <header>Entity references</header>
+            <article>
+                <p>In HTML, the characters <code>&lt;</code> ,<code>&gt;</code> , <code>"</code> , <code>'</code> and
+                    <code>&</code> are special characters. They are parts of the HTML syntax
+                    itself. So how do you include one of these special characters in your text? For example, if you
+                    want to use an ampersand or less-than sign, and not have it interpreted as code.
+                </p>
+                <p>You do this with character references. These are special codes that represent characters, to be used
+                    in these exact circumstances. Each character reference starts with an ampersand (<code>&</code>),
+                    and ends with a
+                    semicolon (<code>;</code>).</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Literal character</th>
+                            <th>Character reference equivalent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;</td>
+                            <td><code>&amp;lt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td><code>&amp;gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>"</td>
+                            <td><code>&amp;quot;</code></td>
+                        </tr>
+                        <tr>
+                            <td>'</td>
+                            <td><code>&amp;apos;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&amp;</td>
+                            <td><code>&amp;amp;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>The character reference equivalent could be easily remembered because the text it uses can be seen as
+                    less than for '<code>&lt;</code>' , quotation for '<code>&quot;</code>' and similarly for others.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="HTML_comments">
+            <header>HTML comments</header>
+            <article>
+                <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making
+                    comments
+                    invisible to the user. The purpose of comments is to allow you to include notes in the code to
+                    explain
+                    your logic or coding. This is very useful if you return to a code base after being away for long
+                    enough
+                    that you don't completely remember it. Likewise, comments are invaluable as different people are
+                    making
+                    changes and updates.</p>
+                <p>To write an HTML comment, wrap it in the special markers <code>&lt;!-- and --&gt;</code>.</p>
+            </article>
+        </section>
+        <footer>
+            <span>Copyright &copy; | Project made by Jorge Cruz for freeCodeCamp | All documentation in this page is
+                taken from<a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN</a></span>
+        </footer>
+    </main>
+</body>
+
+</html>
