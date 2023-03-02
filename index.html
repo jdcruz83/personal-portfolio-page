@@ -21,10 +21,8 @@
 </head>
 
 <body class="main-content">
-  <header class="section section1 header active"></header>
-
-  <main>
-    <section id="welcome-section" class="section section2 about">
+  <div class="blur-filter">
+    <header class="section section1 header active" id="header">
       <div class="section-header">
         <h1>I am Jorge Cruz,</h1>
         <p class="typewriter">and this is my <code> "HELLO WORLD!" </code></p>
@@ -53,120 +51,126 @@
       </div>
       <p>Don't forget to check my projects.</p>
       <p>I'm adding new abilities and programming languages soon.</p>
-    </section>
+    </header>
 
-    <section id="projects" class="section section3 portfolio">
-      <div class="section-header">
-        <h1>My Portfolio</h1>
-        <p>Here are some of my projects, many of them made from certification exercises.</p>
-      </div>
-      <div id="projectDiv" class="project-tile">
-        <div>
-          <h2>Landing Page</h2>
-          <p class="project-resume">Simple product/service landing page</p>
-          <p class="project-techs">HTML / CSS</p>
-          <a href="pages/landingPage.html" target="_blank" rel="noopener noreferrer"><img
-              src="images/landingPageThumb.png" alt="Landing Page Preview"></a>
-        </div>
-        <div>
-          <h2>Survey Form</h2>
-          <p class="project-resume">Simple static survey form</p>
-          <p class="project-techs">HTML / CSS</p>
-          <a href="pages/surveyForm.html" target="_blank" rel="noopener noreferrer"><img
-              src="images/surveyFormThumb.png" alt="Survey Form Preview"></a>
-        </div>
-        <div>
-          <h2>Technical Doc Page</h2>
-          <p class="project-resume">Page for technical documentation</p>
-          <p class="project-techs">HTML / CSS</p>
-          <a href="pages/technicalDoc.html" target="_blank" rel="noopener noreferrer"><img
-              src="images/technicalDocThumb.png" alt="Technical Documentation Page Preview"></a>
-        </div>
-        <div>
-          <h2>Tribute Page</h2>
-          <p class="project-resume">Tribute landing page for a celebrity</p>
-          <p class="project-techs">HTML / CSS</p>
-          <a href="pages/tribute.html" target="_blank" rel="noopener noreferrer"><img src="images/tributePageThumb.png"
-              alt="Tribute Page Preview"></a>
-        </div>
-        <div>
-          <h2>Mapty Project</h2>
-          <p class="project-resume">App for register and track your workouts</p>
-          <p class="project-techs">Javascript, Leaflet Library, Geolocation API, OOP</p>
-          <a href="https://mapty-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
-              src="images/mapty.png" alt="Landing Page Preview"></a>
-        </div>
-        <div>
-          <h2>Forkify Project</h2>
-          <p class="project-resume">App for searching from more than 1 million recipes</p>
-          <p class="project-techs">Javascript, Parcel, SASS, API, MVC, Git, Netlify</p>
-          <a href="https://forkify-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
-              src="images/forkify.png" alt="Landing Page Preview"></a>
-        </div>
-        <div>
-          <h2>Today I Learned</h2>
-          <p class="project-resume">Fullstack project app for fact sharing/check</p>
-          <p class="project-techs">HTML/CSS, JS, ReactJS, DB(Supabase)</p>
-          <a href="https://todayilearned-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
-              src="images/todayilearned.png" alt="Landing Page Preview"></a>
-        </div>
-        <div>
-          <h2>Bankist App</h2>
-          <p class="project-resume">Bank app with user login, movements and much more</p>
-          <p class="project-techs">Under development</p>
-          <a href="#" target="_blank" rel="noopener noreferrer"><img src="" alt="Landing Page Preview"></a>
-        </div>
-      </div>
+    <main class="main">
+      <section class="section section2 about" id="about">
+      </section>
 
-      <p>Please, kindly check my profiles in contact section for more projects and challenges made in Python, on
-        freeCodeCamp and on my Replit!</p>
-    </section>
+      <section class="section section3 projects" id="projects">
+        <div class="section-header">
+          <h1>My Portfolio</h1>
+          <p>Here are some of my projects, many of them made from certification exercises.</p>
+        </div>
+        <div id="projectDiv" class="project-tile">
+          <div>
+            <h2>Landing Page</h2>
+            <p class="project-resume">Simple product/service landing page</p>
+            <p class="project-techs">HTML / CSS</p>
+            <a href="pages/landingPage.html" target="_blank" rel="noopener noreferrer"><img
+                src="images/landingPageThumb.png" alt="Landing Page Preview"></a>
+          </div>
+          <div>
+            <h2>Survey Form</h2>
+            <p class="project-resume">Simple static survey form</p>
+            <p class="project-techs">HTML / CSS</p>
+            <a href="pages/surveyForm.html" target="_blank" rel="noopener noreferrer"><img
+                src="images/surveyFormThumb.png" alt="Survey Form Preview"></a>
+          </div>
+          <div>
+            <h2>Technical Doc Page</h2>
+            <p class="project-resume">Page for technical documentation</p>
+            <p class="project-techs">HTML / CSS</p>
+            <a href="pages/technicalDoc.html" target="_blank" rel="noopener noreferrer"><img
+                src="images/technicalDocThumb.png" alt="Technical Documentation Page Preview"></a>
+          </div>
+          <div>
+            <h2>Tribute Page</h2>
+            <p class="project-resume">Tribute landing page for a celebrity</p>
+            <p class="project-techs">HTML / CSS</p>
+            <a href="pages/tribute.html" target="_blank" rel="noopener noreferrer"><img
+                src="images/tributePageThumb.png" alt="Tribute Page Preview"></a>
+          </div>
+          <div>
+            <h2>Mapty Project</h2>
+            <p class="project-resume">App for register and track your workouts</p>
+            <p class="project-techs">Javascript, Leaflet Library, Geolocation API, OOP</p>
+            <a href="https://mapty-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
+                src="images/mapty.png" alt="Landing Page Preview"></a>
+          </div>
+          <div>
+            <h2>Forkify Project</h2>
+            <p class="project-resume">App for searching from more than 1 million recipes</p>
+            <p class="project-techs">Javascript, Parcel, SASS, API, MVC, Git, Netlify</p>
+            <a href="https://forkify-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
+                src="images/forkify.png" alt="Landing Page Preview"></a>
+          </div>
+          <div>
+            <h2>Today I Learned</h2>
+            <p class="project-resume">Fullstack project app for fact sharing/check</p>
+            <p class="project-techs">HTML/CSS, JS, ReactJS, DB(Supabase)</p>
+            <a href="https://todayilearned-jdcruz83.netlify.app/" target="_blank" rel="noopener noreferrer"><img
+                src="images/todayilearned.png" alt="Landing Page Preview"></a>
+          </div>
+          <div>
+            <h2>Bankist App</h2>
+            <p class="project-resume">Bank app with user login, movements and much more</p>
+            <p class="project-techs">Under development</p>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="" alt="Landing Page Preview"></a>
+          </div>
+        </div>
 
-    <section id="contacts" class="section section4 contacts">
-      <div class="section-header"></div>
-      <h1>Should we work together?</h1>
-      <p>Feel free to contact me through any of my profiles.</p>
-      </div>
-      <div id="contactLinks" class="contact-links">
-        <div>
-          <a id="profile-link" href="https://www.linkedin.com/in/jdcruz83/" target="_blank" class="contactButton">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            Linkedin
-          </a>
+        <p>Please, kindly check my profiles in contact section for more projects and challenges made in Python, on
+          freeCodeCamp and on my Replit!</p>
+      </section>
+
+      <section class="section section4 contacts" id="contacts">
+        <div class="section-header"></div>
+        <h1>Should we work together?</h1>
+        <p>Feel free to contact me through any of my profiles.</p>
+        <div id="contactLinks" class="contact-links">
+          <div>
+            <a id="profile-link" href="https://www.linkedin.com/in/jdcruz83/" target="_blank" class="contactButton">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              Linkedin
+            </a>
+          </div>
+          <div>
+            <a id="profile-link" href="https://www.freecodecamp.org/jorgeCruz83" target="_blank" class="contactButton">
+              <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+              freeCodeCamp
+            </a>
+          </div>
+          <div>
+            <a id="profile-link" href="https://github.com/jdcruz83" target="_blank" class="contactButton">
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
+          <div>
+            <a id="profile-link" href="https://replit.com/@jdcruz83" target="_blank" class="contactButton">
+              <i class="fa fa-bullseye" aria-hidden="true"></i>
+              Replit
+            </a>
+          </div>
+          <div>
+            <a id="profile-link" href="#" target="_blank" class="contactButton">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              Twitter
+            </a>
+          </div>
+          <div>
+            <a id="profile-link" href="mailto:jdcruz83@hotmail.com" target="_blank" class="contactButton">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              Send e-mail
+            </a>
+          </div>
         </div>
-        <div>
-          <a id="profile-link" href="https://www.freecodecamp.org/jorgeCruz83" target="_blank" class="contactButton">
-            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-            freeCodeCamp
-          </a>
-        </div>
-        <div>
-          <a id="profile-link" href="https://github.com/jdcruz83" target="_blank" class="contactButton">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-            GitHub
-          </a>
-        </div>
-        <div>
-          <a id="profile-link" href="https://replit.com/@jdcruz83" target="_blank" class="contactButton">
-            <i class="fa fa-bullseye" aria-hidden="true"></i>
-            Replit
-          </a>
-        </div>
-        <div>
-          <a id="profile-link" href="#" target="_blank" class="contactButton">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            Twitter
-          </a>
-        </div>
-        <div>
-          <a id="profile-link" href="mailto:jdcruz83@hotmail.com" target="_blank" class="contactButton">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            Send e-mail
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+
+      <section class="section section5 blogs" id="blogs"></section>
+    </main>
+  </div>
 
   <div class="controls">
     <div class="control control1 active-btn" data-id="header">
@@ -175,14 +179,14 @@
     <div class="control control2" data-id="about">
       <i class="fa fa-user" aria-hidden="true"></i>
     </div>
-    <div class="control control3" data-id="portfolio">
+    <div class="control control3" data-id="projects">
       <i class="fa fa-briefcase" aria-hidden="true"></i>
     </div>
-    <div class="control control4" data-id="blogs">
-      <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-    </div>
-    <div class="control control5" data-id="contacts">
+    <div class="control control4" data-id="contacts">
       <i class="fa fa-envelope-open" aria-hidden="true"></i>
+    </div>
+    <div class="control control5" data-id="blogs">
+      <i class="fa fa-newspaper-o" aria-hidden="true"></i>
     </div>
   </div>
 
