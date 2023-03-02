@@ -1,6 +1,6 @@
 // SASS variables
 $transition-1: all 0.4s ease-in-out;
-$box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
+$box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.2);
 $base-gradient: linear-gradient(
   135deg,
   rgba(0, 0, 0, 0.9),
@@ -34,10 +34,6 @@ $primary-900: #1c1917;
   scroll-behavior: smooth;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 body {
   // Background
   background-image: $base-gradient, url("/images/background.jpg");
@@ -48,9 +44,11 @@ body {
   color: $primary-color;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 2;
   transition: $transition-1;
   letter-spacing: 0.15em;
+  overflow-y: scroll;
 }
 
 a {
@@ -67,19 +65,18 @@ main {
   justify-content: center;
 }
 
-header {
-  height: 100vh;
-  color: inherit;
-  overflow: hidden;
-}
-
-// section {
-//   height: 100vh;
-//   width: 100%;
-//   // position: absolute;
-//   // left: 0;
-//   // top: 0;
+// header {
+//   color: inherit;
+//   overflow: hidden;
 // }
+
+section {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 label {
   color: inherit;
@@ -93,6 +90,7 @@ label {
 
 h1 {
   font-size: 3em;
+  font-weight: 700;
   color: inherit;
 }
 
@@ -118,7 +116,7 @@ footer {
 }
 
 .blur-filter {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
 }
 
 .section {
@@ -126,13 +124,14 @@ footer {
   transition: $transition-1;
   width: 80vw;
   height: fit-content;
+  min-height: 80vh;
   color: inherit;
-  padding: 8em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  margin: 8em;
+  margin: 8em 6em;
   background-color: rgba(87, 83, 78, 0.4);
   border-radius: $border-small;
   box-shadow: 10px 10px 19px 5px rgba(0, 0, 0, 0.75);
@@ -177,6 +176,7 @@ footer {
     img {
       height: auto;
       width: 40vmin;
+      box-shadow: 10px 10px 19px 5px rgba(0, 0, 0, 0.75);
     }
   }
 }
@@ -184,6 +184,9 @@ footer {
 .section4 {
   display: none;
   transform: translateY(0) scale(1);
+  .fa {
+    font-size: 1.5 em;
+  }
   .contact-links {
     color: inherit;
     display: flex;
@@ -264,6 +267,31 @@ footer {
       font-size: 1.2rem;
       color: $primary-color;
       pointer-events: none;
+    }
+  }
+}
+
+// Components
+.main-title {
+  text-align: center;
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    span {
+      color: $secondary-color;
+    }
+    .bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $primary-700;
+      transition: $transition-1;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      font-weight: 800;
+      font-size: 6.3rem;
     }
   }
 }

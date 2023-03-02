@@ -4,16 +4,6 @@ const sectionBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
 function PageTransition() {
-  console.log(sectionBtn);
-  // Activate button on click
-  // for (let i = 0; i < sectionBtn.length; i++) {
-  //   sectionBtn[i].addEventListener("click", function () {
-  //     const activeBtn = document.querySelectorAll(".active-btn");
-  //     console.log(activeBtn);
-  //     activeBtn[0].classList.toggle("active-btn");
-  //     this.className += " active-btn";
-  //   });
-  // }
   sectionBtn.forEach(function (btn) {
     btn.addEventListener("click", function () {
       const activeBtn = document.querySelectorAll(".active-btn");
@@ -25,6 +15,7 @@ function PageTransition() {
 
   // Switch to section
   allSections.addEventListener("click", (e) => {
+    e.preventDefault();
     const id = e.target.dataset.id;
     if (id) {
       // remove active
@@ -38,6 +29,7 @@ function PageTransition() {
         section.classList.remove("active");
       });
 
+      // Activate corresponding section
       const element = document.getElementById(id);
       element.classList.add("active");
     }
