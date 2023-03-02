@@ -57,6 +57,8 @@ main {
 }
 
 header {
+  height: 100vh;
+  color: inherit;
   overflow: hidden;
 }
 
@@ -64,7 +66,8 @@ section {
   min-height: 100vh;
   width: 100%;
   // position: absolute;
-  padding: 3rem 18rem;
+  left: 0;
+  top: 0;
 }
 
 label {
@@ -117,7 +120,6 @@ footer {
 .section1 {
   display: none;
   transform: translateY(0) scale(1);
-  height: 10px;
 }
 
 .section2 {

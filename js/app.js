@@ -5,4 +5,18 @@ const allSections = document.querySelector(".main-content");
 
 function PageTransition() {
   // Activate button on click
+  for (let i = 0; i < sectionBtn.length; i++) {
+    sectionBtn[i].addEventListener("click", function () {
+      let currentBtn = document.querySelectorAll(".active-btn");
+      currentBtn[0].className = currentBtn[0].className.replace(
+        "active-btn",
+        ""
+      );
+      this.className += " active-btn";
+    });
+  }
+
+  // Switch to section
 }
+
+PageTransition();
