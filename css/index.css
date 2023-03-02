@@ -17,6 +17,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   transition: all 0.4s ease-in-out;
+  letter-spacing: 0.15em;
 }
 
 a {
@@ -85,9 +86,11 @@ footer {
   justify-content: center;
   text-align: center;
   height: auto;
+  line-height: 2;
 }
 
 .section1 {
+  display: none;
   transform: translateY(0) scale(1);
   height: 10px;
 }
@@ -179,7 +182,7 @@ footer {
   transform: translateY(-50%);
 }
 .controls .active-btn {
-  background-color: #292524 !important;
+  background-color: rgb(0, 85, 0) !important;
   transition: all 0.4s ease-in-out;
   font-size: 1.2rem;
 }
