@@ -312,6 +312,21 @@ footer {
       }
     }
   }
+  .left-about {
+    padding-right: 5rem;
+    p {
+      line-height: 2rem;
+      padding: 1rem;
+      color: $primary-100;
+    }
+    h4 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.about-stats {
 }
 
 // Components

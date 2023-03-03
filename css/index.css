@@ -280,6 +280,18 @@ footer {
   height: 2px;
   background-color: #78716c;
 }
+.about-container .left-about {
+  padding-right: 5rem;
+}
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: #f5f5f4;
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
 .main-title {
   text-align: center;
