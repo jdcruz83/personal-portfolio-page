@@ -3,21 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  scroll-behavior: smooth;
 }
 
 body {
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843)), url("/images/background.jpg");
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5411764706), rgba(0, 0, 0, 0.5411764706)), url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: #fafaf9;
+  color: #f5f5f4;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2;
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
   letter-spacing: 0.15em;
   overflow-y: scroll;
 }
@@ -61,7 +60,7 @@ p {
 footer {
   display: none;
   position: fixed;
-  background: rgba(119, 28, 28, 0.8);
+  background: #be6741;
   color: inherit;
   bottom: 0;
   left: 0;
@@ -69,7 +68,7 @@ footer {
   width: 100%;
   height: 70px;
   line-height: 3;
-  border-top: 1px solid white;
+  border-top: 1px solid #f5f5f4;
 }
 
 .blur-filter {
@@ -79,7 +78,7 @@ footer {
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
   max-width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
@@ -90,8 +89,8 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  margin: 8em 10em;
-  background-color: rgba(87, 83, 78, 0.4588235294);
+  margin: 5em 10em;
+  background-color: #1c1917;
   border-radius: 20px;
   box-shadow: 10px 10px 19px 5px rgba(0, 0, 0, 0.75);
 }
@@ -137,6 +136,13 @@ footer {
 .section3 .project-tile img {
   height: auto;
   width: 40vmin;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.section3 .project-tile img:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  transition: all 300ms ease-in-out;
+  border: 1px solid #be6741;
   box-shadow: 10px 10px 19px 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -157,7 +163,7 @@ footer {
 }
 .section4 .contact-links a {
   text-decoration: none;
-  color: white;
+  color: #f5f5f4;
   font-size: 2em;
   text-shadow: 2px 2px 1px rgb(0, 0, 0);
   transition: font-size 300ms ease-out;
@@ -210,7 +216,7 @@ footer {
 }
 .controls .active-btn {
   background-color: #be6741 !important;
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
   font-size: 1.2rem;
 }
 .controls .control {
@@ -222,7 +228,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 .controls .control i {
   font-size: 1.2rem;
@@ -244,8 +250,8 @@ footer {
 .about-container .right-about .about-item {
   border: 1px solid #78716c;
   border-radius: 5px;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-in-out;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 .about-container .right-about .about-item:hover {
   cursor: default;
@@ -293,6 +299,81 @@ footer {
   text-transform: uppercase;
 }
 
+.about-stats {
+  padding-bottom: 4rem;
+}
+.about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: #e7e5e4;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: #a8a29e;
+  margin-left: 1rem;
+  position: relative;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #be6741;
+  transition: all 400ms ease-in-out;
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css3 {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .reactjs {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .nodejs {
+  width: 40%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 50%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: #78716c;
+  transform: translateX(-50%);
+}
+
 .main-title {
   text-align: center;
 }
@@ -301,7 +382,7 @@ footer {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
-  color: #fafaf9;
+  color: #f5f5f4;
 }
 .main-title h2 span {
   color: #be6741;
@@ -311,11 +392,12 @@ footer {
   top: 50%;
   left: 50%;
   color: #44403c;
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
+  white-space: nowrap;
 }
 
 .btn-container {
@@ -353,7 +435,7 @@ footer {
   top: 0;
   right: 0;
   transform: translateX(100%);
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: -1;
 }
 .main-btn:hover::before {
@@ -365,7 +447,7 @@ footer {
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.15em solid orange;
+  border-right: 0.15em solid #be6741;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -387,6 +469,6 @@ footer {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #be6741;
   }
 }/*# sourceMappingURL=index.css.map */
