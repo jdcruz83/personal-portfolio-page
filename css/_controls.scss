@@ -1,0 +1,34 @@
+@import "variables.scss";
+
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  .active-btn {
+    background-color: $secondary-color !important;
+    transition: $transition-1;
+    font-size: 1.2rem;
+  }
+  .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: $primary-500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+    box-shadow: $box-shadow-small;
+    i {
+      font-size: 1.2rem;
+      color: $primary-color;
+      pointer-events: none;
+    }
+  }
+}
