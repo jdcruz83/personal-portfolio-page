@@ -4,6 +4,7 @@
 @import "about";
 @import "portfolio";
 @import "blog";
+@import "sections";
 
 * {
   margin: 0;
@@ -22,11 +23,11 @@ body {
 
   color: $primary-100;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  //font-size: 1rem;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   transition: $transition-1;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
   overflow-y: scroll;
 }
 
@@ -38,7 +39,6 @@ a {
 }
 
 main {
-  // backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,149 +54,24 @@ label {
   float: right;
 }
 
-h1 {
-  font-size: 3em;
-  font-weight: 700;
-  color: inherit;
-}
-
-p {
-  font-size: 1.5em;
-  font-style: italic;
-  color: inherit;
-  margin: 0;
-}
-
 footer {
   display: none;
+  font-style: italic;
   position: fixed;
-  background: $secondary-color;
+  background: none;
   color: inherit;
   bottom: 0;
   left: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 70px;
-  line-height: 3;
+  height: 40px;
   border-top: 1px solid $primary-100;
 }
 
 .blur-filter {
   backdrop-filter: blur(5px);
-}
-
-.section {
-  transform: translateY(-100%) scale(0);
-  transition: $transition-1;
-  max-width: 100vw;
-  height: fit-content;
-  min-height: 80vh;
-  color: inherit;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  margin: 4em 8em 4em 4em;
-  background-color: $primary-900;
-  border-radius: $border-small;
-  box-shadow: $box-shadow-large;
-}
-
-.section1 {
-  display: none;
-  transform: translateY(0) scale(1);
-  .tech-stack {
-    color: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 30px;
-    img {
-      height: 150px;
-      width: 150px;
-    }
-  }
-}
-
-.section2 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.section3 {
-  display: none;
-  transform: translateY(0) scale(1);
-  .project-tile {
-    color: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    div {
-      margin: 20px;
-    }
-    img {
-      height: auto;
-      width: 40vmin;
-      box-shadow: $box-shadow-small;
-      &:hover {
-        cursor: default;
-        transform: translateY(-5px);
-        transition: all 300ms ease-in-out;
-        border: 1px solid $secondary-color;
-        box-shadow: $box-shadow-large;
-      }
-    }
-  }
-}
-
-.section4 {
-  display: none;
-  transform: translateY(0) scale(1);
-  .fa {
-    font-size: 1.5 em;
-  }
-  .contact-links {
-    color: inherit;
-    display: flex;
-    margin: 8em;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    a {
-      text-decoration: none;
-      color: $primary-100;
-      font-size: 2em;
-      text-shadow: 2px 2px 1px rgb(0, 0, 0);
-      transition: font-size 300ms ease-out;
-      padding: 10px;
-    }
-    & a:hover {
-      font-size: 2.2em;
-    }
-  }
-}
-
-.section5 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.active {
-  display: block;
-  animation: scaleAnim 1s ease-in-out;
-  @keyframes scaleAnim {
-    0% {
-      transform: translateY(-100%) scaleY(0);
-    }
-    100% {
-      transform: translateY(0) scaleY(1);
-    }
-  }
 }
 
 .project-resume {

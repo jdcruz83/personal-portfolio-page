@@ -8,6 +8,7 @@
   .blog {
     position: relative;
     background-color: $primary-500;
+    border-radius: 5px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
     transition: $transition-1;
     &:hover {
@@ -26,6 +27,27 @@
       object-fit: cover;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
+      filter: grayscale(100%);
+      transition: $transition-1;
+    }
+    .blog-text {
+      margin-top: -7px;
+      padding: 1.1rem;
+      border-top: 8px solid $secondary-color;
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+        transition: $transition-1;
+        cursor: pointer;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+      p {
+        color: $primary-200;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+      }
     }
   }
 }
