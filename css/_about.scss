@@ -8,7 +8,7 @@
   .right-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    gap: 2rem;
     .about-item {
       border: 1px solid $primary-500;
       border-radius: 5px;
@@ -68,7 +68,7 @@
   .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    gap: 2rem;
     .progress-bar {
       display: flex;
       flex-direction: column;
@@ -142,7 +142,7 @@
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  gap: 2rem;
   padding-bottom: 3rem;
   .timeline-item {
     position: relative;
