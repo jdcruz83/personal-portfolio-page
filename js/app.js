@@ -2,6 +2,7 @@ const sections = document.querySelectorAll(".section");
 const sectionBtns = document.querySelectorAll(".controls");
 const sectionBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
+const themeBtn = document.querySelector(".theme-btn");
 
 function PageTransition() {
   sectionBtn.forEach(function (btn) {
@@ -37,3 +38,14 @@ function PageTransition() {
 }
 
 PageTransition();
+
+function themeToggle() {
+  themeBtn.addEventListener("click", () => {
+    sections.forEach((section) => {
+      section.classList.toggle("light-mode");
+    });
+    // sections.classList.toggle("light-mode");
+  });
+}
+
+themeToggle();
