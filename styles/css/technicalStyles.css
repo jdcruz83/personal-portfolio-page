@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+}
+
+.headDiv {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+    border-bottom: 1px solid;
+    height: 85px;
+    background-color: white;
+    z-index: 1;
+}
+
+.headDiv h1 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.titleImg {
+    display: flex;
+    justify-self: flex-start;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.main-section {
+    margin-top: 50px;
+    scroll-margin-top: 100px;
+    text-align: justify;
+}
+
+code {
+    font-family: monospace;
+    background-color:rgb(179, 179, 179);
+    font-size: 105%;
+    padding-top: 0.125rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.125rem;
+    padding-left: 0.25rem;
+}
+
+table, table th, table td{
+    border: 1px solid rgba(129, 129, 129, 0.2);
+    text-align: center;
+    padding: 5px;
+}
+
+#navbar {
+    position: fixed;
+    height: 100%;
+    top: 80px;
+    left: 0px;
+    min-width: 290px;
+    width: 300px;
+    border-right-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+#navbar header {
+    font-size: 2em;
+    text-align: left;
+    font-weight: 800;
+    padding: 10px 5px 10px 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    height: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#navbar li:first-of-type {
+    border-top: 2px solid gray;
+}
+
+#main-doc {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 30px;
+    margin-left: 350px;
+}
+
+#main-doc header {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+}
+
+#navbar li,
+a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+}
+
+section li {
+    margin-top: 15px;
+}
+
+img {
+    display: block;
+    max-width: 750px;
+    max-height: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+@media (min-width: 500px) {
+    img {
+        width: 80%;
+        height: auto;
+        margin-right: auto;
+    }
+}
+
+i {
+    color: red;
+}
+
+p {
+    margin-left: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    border-top: 1px solid;
+    height: 70px;
+    background-color: white;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+span {
+    font-style: italic;
+    color:rgba(0, 0, 0, 0.8)
+}
