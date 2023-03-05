@@ -99,7 +99,9 @@
         }
       }
       .left-contact {
-        font-size: 2.5vw;
+        @media screen and (max-width: 500px) {
+          font-size: 3.5vw;
+        }
       }
     }
     .contact-icons {

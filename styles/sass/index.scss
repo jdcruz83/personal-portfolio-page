@@ -27,7 +27,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   transition: var(--transition-1);
-  letter-spacing: 0.15rem;
   overflow-y: scroll;
 }
 
@@ -44,15 +43,15 @@ main {
   justify-content: center;
 }
 
-label {
-  color: inherit;
-  margin: 0 40px 0 0;
-  line-height: 70px;
-  font-size: 2.5em;
-  display: none;
-  width: 26px;
-  float: right;
-}
+// label {
+//   color: inherit;
+//   margin: 0 40px 0 0;
+//   line-height: 70px;
+//   font-size: 2.5em;
+//   display: none;
+//   width: 26px;
+//   float: right;
+// }
 
 footer {
   display: none;
