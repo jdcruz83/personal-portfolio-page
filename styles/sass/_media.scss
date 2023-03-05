@@ -1,9 +1,22 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .section {
-    margin: 1rem 6rem 1rem 1rem;
+    margin: 1rem;
+    margin-bottom: 6rem;
+    .main-title {
+      h2 {
+        font-size: 6vw;
+      }
+      .bg-text {
+        font-size: 9.5vw;
+      }
+    }
   }
+
   .section1 {
-    font-size: 1.8vw;
+    font-size: 2vw;
+    h1 {
+      margin-top: 2rem;
+    }
     .tech-stack {
       display: grid;
       grid-template-columns: 50% 1fr;
@@ -22,5 +35,107 @@
         font-size: 1.8vh;
       }
     }
+  }
+
+  .section2 {
+    .about-container {
+      grid-template-columns: 1fr;
+      .right-about {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 2.5rem;
+        @media screen and (max-width: 750px) {
+          grid-template-columns: 1fr;
+        }
+      }
+      .left-about {
+        h4 {
+          font-size: 6vw;
+        }
+        padding-right: 0;
+        p {
+          padding-left: 0;
+        }
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+    .timeline {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+    .about-stats {
+      .progress-bars {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .section3 {
+    .portfolios {
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 6rem;
+      @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+      }
+    }
+  }
+
+  .section4 {
+    .contact-content-con {
+      flex-direction: column;
+      .right-contact {
+        margin-left: 0;
+        margin-top: 2.5rem;
+        @media screen and (max-width: 750px) {
+          .input-control-2 {
+            flex-direction: column;
+            :last-child {
+              margin-left: 0;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+      .left-contact {
+        font-size: 2.5vw;
+      }
+    }
+    .contact-icons {
+      flex-wrap: wrap;
+    }
+  }
+
+  .section5 {
+    .blogs {
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 6rem;
+      @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+      }
+      .blog {
+        height: auto;
+      }
+    }
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--primary-800);
+    .control {
+      margin: 1rem 0.3rem;
+    }
+  }
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
   }
 }

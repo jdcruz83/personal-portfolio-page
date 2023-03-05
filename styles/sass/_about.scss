@@ -6,10 +6,12 @@
   padding-top: 3.5rem;
   padding-bottom: 5rem;
   .right-about {
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     .about-item {
+      height: 30vh;
       border: 1px solid var(--primary-500);
       border-radius: 5px;
       transition: var(--transition-1);
@@ -59,6 +61,7 @@
     h4 {
       font-size: 2rem;
       text-transform: uppercase;
+      text-align: center;
     }
   }
 }

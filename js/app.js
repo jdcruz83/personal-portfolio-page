@@ -39,12 +39,26 @@ function PageTransition() {
 
 PageTransition();
 
+function themeCheck() {
+  let lightMode = sections[0].classList.contains("light-mode");
+  if (lightMode) {
+    themeBtn.innerHTML = `<i class="fa fa-moon-o" aria-hidden="true"></i>`;
+    console.log(btnContent);
+  } else {
+    themeBtn.innerHTML = `<i class="fa fa-sun-o" aria-hidden="true"></i>`;
+  }
+}
+
 function themeToggle() {
+  themeCheck();
+  // activating light theme
   themeBtn.addEventListener("click", () => {
     sections.forEach((section) => {
       section.classList.toggle("light-mode");
     });
-    // sections.classList.toggle("light-mode");
+
+    // Changing button icon matching theme
+    themeCheck();
   });
 }
 
