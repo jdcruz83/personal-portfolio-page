@@ -785,7 +785,7 @@
   color: inherit;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 50px;
   padding: 30px;
@@ -1082,6 +1082,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .section {
+    margin: 1rem 6rem 1rem 1rem;
+  }
   .section1 {
     font-size: 1.8vw;
   }
