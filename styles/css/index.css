@@ -785,7 +785,7 @@
   color: inherit;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
   padding: 30px;
@@ -1079,4 +1079,26 @@ footer {
 
 .project-techs {
   font-size: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .section1 {
+    font-size: 1.8vw;
+  }
+  .section1 .tech-stack {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 2rem;
+  }
+  .section1 .tech-stack img {
+    width: 18vmin;
+    height: auto;
+    margin: 0;
+  }
+  .section1 .btn-container .btn-text {
+    font-size: 1.8vh;
+  }
+  .section1 .btn-container i {
+    font-size: 1.8vh;
+  }
 }/*# sourceMappingURL=index.css.map */
