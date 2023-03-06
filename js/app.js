@@ -26,7 +26,7 @@ function PageTransition() {
 
   // Switch to section
   allSections.addEventListener("click", (e) => {
-    e.preventDefault();
+    //e.preventDefault(); External links don't work with this option ON;
     const id = e.target.dataset.id;
     if (id) {
       // remove active
