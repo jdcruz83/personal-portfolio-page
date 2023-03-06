@@ -853,7 +853,7 @@ footer {
     margin-bottom: 6rem;
   }
   .section .main-title h2 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .section .main-title .bg-text {
     font-size: 9.5vw;
@@ -898,7 +898,7 @@ footer {
     padding-right: 0;
   }
   .section2 .about-container .left-about h4 {
-    font-size: 6vw;
+    font-size: 3.5vw;
   }
   .section2 .about-container .left-about p {
     padding-left: 0;
@@ -948,6 +948,11 @@ footer {
     margin-top: 1.5rem;
   }
 }
+@media screen and (max-width: 1100px) {
+  .section4 .contact-content-con .left-contact h4 {
+    font-size: 3.5vw;
+  }
+}
 @media screen and (max-width: 1100px) and (max-width: 500px) {
   .section4 .contact-content-con .left-contact {
     font-size: 3.5vw;
@@ -956,6 +961,12 @@ footer {
 @media screen and (max-width: 1100px) {
   .section4 .contact-icons {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 700px) {
+  .section4 .contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 1100px) {
