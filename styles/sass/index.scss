@@ -6,6 +6,7 @@
 @import "blog";
 @import "sections";
 @import "contacts";
+@import "modal";
 
 * {
   margin: 0;
@@ -43,16 +44,6 @@ main {
   justify-content: center;
 }
 
-// label {
-//   color: inherit;
-//   margin: 0 40px 0 0;
-//   line-height: 70px;
-//   font-size: 2.5em;
-//   display: none;
-//   width: 26px;
-//   float: right;
-// }
-
 footer {
   display: none;
   font-style: italic;
@@ -71,18 +62,6 @@ footer {
 
 .blur-filter {
   backdrop-filter: blur(5px);
-}
-
-.project-resume {
-  font-size: 1em;
-  font-style: normal;
-  font-weight: bold;
-  color: inherit;
-  margin: 0;
-}
-
-.project-techs {
-  font-size: 1em;
 }
 
 @import "media";

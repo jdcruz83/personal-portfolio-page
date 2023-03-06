@@ -1,8 +1,17 @@
+// Page transition variables
 const sections = document.querySelectorAll(".section");
 const sectionBtns = document.querySelectorAll(".controls");
 const sectionBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
+
+//Theme variables
 const themeBtn = document.querySelector(".theme-btn");
+
+// Modal Variables
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
 
 // Page transition
 function PageTransition() {
@@ -44,7 +53,6 @@ function themeCheck() {
   let lightMode = sections[0].classList.contains("light-mode");
   if (lightMode) {
     themeBtn.innerHTML = `<i class="fa fa-moon-o" aria-hidden="true"></i>`;
-    console.log(btnContent);
   } else {
     themeBtn.innerHTML = `<i class="fa fa-sun-o" aria-hidden="true"></i>`;
   }
@@ -66,8 +74,11 @@ themeToggle();
 
 // Modal window for project information
 
-function showModal() {
-  const html = document.body.addEventListener("click", (e) => console.log(e));
-  console.log(html);
-}
-showModal();
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
