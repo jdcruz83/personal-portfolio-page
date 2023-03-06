@@ -4,6 +4,7 @@ const sectionBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 const themeBtn = document.querySelector(".theme-btn");
 
+// Page transition
 function PageTransition() {
   sectionBtn.forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -36,9 +37,9 @@ function PageTransition() {
     }
   });
 }
-
 PageTransition();
 
+// Theme dark and light switch
 function themeCheck() {
   let lightMode = sections[0].classList.contains("light-mode");
   if (lightMode) {
@@ -61,5 +62,12 @@ function themeToggle() {
     themeCheck();
   });
 }
-
 themeToggle();
+
+// Modal window for project information
+
+function showModal() {
+  const html = document.body.addEventListener("click", (e) => console.log(e));
+  console.log(html);
+}
+showModal();
