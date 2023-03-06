@@ -7,6 +7,7 @@ const allSections = document.querySelector(".main-content");
 //Theme variables
 const themeBtn = document.querySelector(".theme-btn");
 
+// TODO:
 // Modal Variables
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -51,7 +52,7 @@ function PageTransition() {
 }
 PageTransition();
 
-// Theme dark and light switch
+// Theme dark and light toggle
 function themeCheck() {
   let lightMode = sections[0].classList.contains("light-mode");
   if (lightMode) {
@@ -75,6 +76,7 @@ function themeToggle() {
 }
 themeToggle();
 
+// TODO:
 // Modal window for project information
 
 const openModal = function () {
