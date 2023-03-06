@@ -392,6 +392,7 @@
 }
 
 .port-text {
+  font-size: 1.3rem;
   padding: 2rem 0;
   text-align: center;
 }
@@ -468,8 +469,8 @@
 }
 
 .portfolio-footer {
+  font-size: 1.3rem;
   margin-top: 100px;
-  font-weight: 600;
 }
 
 .blogs {
