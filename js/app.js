@@ -43,6 +43,8 @@ function PageTransition() {
       // Activate corresponding section
       const element = document.getElementById(id);
       element.classList.add("active");
+
+      // Force scroll to top of page on loading
       window.scrollTo(0, 0);
     }
   });
