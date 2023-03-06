@@ -109,10 +109,10 @@
     }
     .contact-icons {
       flex-wrap: wrap;
-      @media screen and (max-width: 700px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
+      // @media screen and (max-width: 700px) {
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr 1fr;
+      // }
     }
   }
 

@@ -963,12 +963,6 @@ footer {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 700px) {
-  .section4 .contact-icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 @media screen and (max-width: 1100px) {
   .section5 .blogs {
     grid-template-columns: 1fr 1fr;
