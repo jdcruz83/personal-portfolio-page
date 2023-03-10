@@ -183,7 +183,8 @@
         </div>
         <h4 class="stat-title">My Timeline</h4>
         <div class="timeline">
-          <!-- <div class="timeline-item">
+          <!-- Timeline item to add more items
+            <div class="timeline-item">
             <div class="tl-icon">
               <i class="fa fa-briefcase"></i>
             </div>
@@ -298,7 +299,7 @@
                     rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="">
+                  <a class="icon show-modal" href="#todayilearned" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -319,7 +320,7 @@
                     rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#forkify" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -339,7 +340,7 @@
                     rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#mapty" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -358,7 +359,7 @@
                   <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#landingPage" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -377,7 +378,7 @@
                   <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#surveyForm" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -396,7 +397,7 @@
                   <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#technicalDoc" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -415,7 +416,7 @@
                   <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#tributePage" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -428,16 +429,17 @@
               <div class="hover-items">
                 <h3>Coming Soon...</h3>
                 <div class="icons">
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon" href="#" target="" rel="noopener noreferrer">
                     <i class="fa fa-edge" aria-hidden="true"></i>
                   </a>
-                  <a class="icon" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon" href="#" target="" rel="noopener noreferrer">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
                   <!-- TODO: Show modal window with project info-->
-                  <a class="icon show-modal" href="#" target="_blank" rel="noopener noreferrer">
+                  <a class="icon show-modal" href="#myModalLoading" target="">
                     <i class="fa fa-info" aria-hidden="true"></i>
                   </a>
+                  <!-- TODO: -->
                 </div>
               </div>
             </div>
@@ -448,6 +450,7 @@
           made in Python,
           on
           freeCodeCamp and on my Replit!</p>
+        <div class="overlay hidden"></div>
       </section>
 
       <section class="section section4 contacts" id="contacts">
@@ -662,22 +665,113 @@
     <!-- <i class="fa fa-adjust" aria-hidden="true"></i> -->
   </div>
 
-  <!-- Modal Window for project information -->
-  <div class="modal hidden">
+
+  <!-- Modal windows for portfolio information -->
+  <div class="modal hidden" id="#todayilearned">
     <button class="close-modal">&times;</button>
-    <h1>I'm a modal window 😍</h1>
+    <h1>Today I Learned</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-      enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-      nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Complete Full-Stack web app, made from Udemy course. Allows creation of facts, fact checking based on other users
+      opinions, separated by categories. Made from Udemy Full-Stack course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS, JavaScript, React, Supabase, Git, GitHub };
     </p>
   </div>
-  <div class="overlay hidden"></div>
 
+  <div class="modal hidden" id="#forkify">
+    <button class="close-modal">&times;</button>
+    <h1>Forkify</h1>
+    <p>
+      Recipe web app, made from Udemy JavaScript course. App for searching recipes, with page navigation (10 results p/
+      page). Allows uploading our own recipes using custom API made by the course instructor;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS/SASS, JavaScript, API, Parcel, Git, GitHub };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#mapty">
+    <button class="close-modal">&times;</button>
+    <h1>Mapty</h1>
+    <p>
+      Workout web app for registering workouts in the map interface. Allows creating new workouts, storing data in
+      localStorage. Made from Udemy JavaScript course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS, JavaScript, localStorage, Geolocation API, Leafet Library, Git, GitHub };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#landingPage">
+    <button class="close-modal">&times;</button>
+    <h1>Simple Landing Page</h1>
+    <p>
+      Simple Product/Service landing page, with menu navigation and several sections for diferent information. Made for
+      freeCodeCamp's Responsive Web Design course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#surveyForm">
+    <button class="close-modal">&times;</button>
+    <h1>Survey Form</h1>
+    <p>
+      Survey form made from freeCodeCamp course on Responsive Web Design, also exploring the latest accessibility
+      features. Made for freeCodeCamp's Responsive Web Design course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#technicalDoc">
+    <button class="close-modal">&times;</button>
+    <h1>Technical Documentation Page</h1>
+    <p>
+      Technical Documentation Page, has we see, for example, in several programming languages docs. Made for
+      freeCodeCamp's Responsive Web Design course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#tributePage">
+    <button class="close-modal">&times;</button>
+    <h1>Tribute Page</h1>
+    <p>
+      Tribute page for a personallity of our choice. Made for freeCodeCamp's Responsive Web Design course;
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS };
+    </p>
+  </div>
+
+  <div class="modal hidden" id="#myModalLoading">
+    <button class="close-modal">&times;</button>
+    <h1>More projects coming soon...</h1>
+    <p>
+      I am adding more projects as soon as I finish them within my current courses.
+    </p>
+    <p>
+      Tech-Stack = { HTML, CSS, JavaScript, React.js, Parcel, Node.js, Express, MongoDB, Git, GitHub };
+    </p>
+  </div>
+
+  <!-- Modal Window for project information - Example -->
+  <!-- <div class="modal hidden" id="#myModalLoading">
+        <button class="close-modal">&times;</button>
+        <h1>MODAL TEST</h1>
+        <p>
+          TEST PARAGRAPH
+        </p>
+        <p>
+          TEST PARAGRAPH
+        </p>
+      </div> -->
 
   <footer>
     <p>&copy; Copyright | Page built by Jorge Cruz | 2023</p>

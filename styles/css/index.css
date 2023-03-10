@@ -757,29 +757,37 @@
   display: none;
 }
 
-.close-modal {
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  background-color: var(--primary-800);
+  color: var(--primary-100);
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-small);
+  z-index: 10;
+}
+.modal .close-modal {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
   font-size: 5rem;
-  color: #333;
+  color: var(--primary-100);
   cursor: pointer;
   border: none;
   background: none;
 }
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  background-color: var(--primary-200);
-  color: var(--primary-900);
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: var(--box-shadow-small);
-  z-index: 10;
+.modal h1 {
+  font-size: 1.8rem;
+  color: var(--primary-100);
+  margin-bottom: 1.5rem;
+}
+.modal p {
+  margin-bottom: 1rem;
 }
 
 .overlay {
@@ -999,5 +1007,21 @@ footer {
   .theme-btn {
     width: 50px;
     height: 50px;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 800px) {
+  .modal {
+    width: 80vw;
+    height: auto;
+    padding: 2rem;
+  }
+  .modal .close-modal {
+    font-size: 7vw;
+  }
+  .modal h1 {
+    font-size: 3.5vw;
+  }
+  .modal p {
+    font-size: 2.5vw;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -2,30 +2,38 @@
   display: none;
 }
 
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 50vw;
+  height: auto;
 
-  background-color: var(--primary-200);
-  color: var(--primary-900);
-  padding: 6rem;
+  background-color: var(--primary-800);
+  color: var(--primary-100);
+  padding: 4rem;
   border-radius: 5px;
   box-shadow: var(--box-shadow-small);
   z-index: 10;
+  .close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: var(--primary-100);
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: var(--primary-100);
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
 }
 
 .overlay {
