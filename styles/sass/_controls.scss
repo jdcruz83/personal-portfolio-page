@@ -17,6 +17,8 @@
     padding: 1rem;
     cursor: pointer;
     background-color: var(--primary-500);
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -87,7 +89,7 @@
 }
 
 .theme-btn {
-  filter: opacity(90%);
+  filter: opacity(70%);
   top: 3%;
   right: 3%;
   width: 60px;
@@ -100,7 +102,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow-small);
-  transition: all 0.1s ease-in-out;
+  transition: all 100ms ease-in-out;
   &:active {
     transform: translateY(-3px);
   }

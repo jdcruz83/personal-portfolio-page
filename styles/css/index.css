@@ -109,6 +109,8 @@
   padding: 1rem;
   cursor: pointer;
   background-color: var(--primary-500);
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -176,7 +178,7 @@
 }
 
 .theme-btn {
-  filter: opacity(90%);
+  filter: opacity(70%);
   top: 3%;
   right: 3%;
   width: 60px;
@@ -189,7 +191,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: var(--box-shadow-small);
-  transition: all 0.1s ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .theme-btn:active {
   transform: translateY(-3px);
@@ -568,13 +570,18 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
   padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-small);
 }
 .section1 .tech-stack img {
   height: 150px;
   width: 150px;
   margin-top: 15px;
+}
+.section1 .tech-stack img:hover {
+  transform: translatey(-5px);
 }
 .section1 .header-text {
   position: relative;
@@ -844,6 +851,7 @@ footer {
   color: inherit;
   bottom: 0;
   left: 0;
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -1001,6 +1009,8 @@ footer {
   }
   .controls .control {
     margin: 1rem 0.3rem;
+    width: 45px;
+    height: 45px;
   }
 }
 @media screen and (max-width: 1100px) {
