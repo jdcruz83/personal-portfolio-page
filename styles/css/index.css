@@ -416,6 +416,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+  box-shadow: var(--box-shadow-small);
 }
 .portfolios .portfolio-item .hover-items {
   width: 100%;
