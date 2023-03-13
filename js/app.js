@@ -15,7 +15,9 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsCloseModal = document.querySelectorAll(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
+let currentModal = "";
 
+///////////////////////
 // Page transition
 function PageTransition() {
   sectionBtn.forEach(function (btn) {
@@ -54,9 +56,12 @@ function PageTransition() {
 }
 PageTransition();
 
+////////////////////////////////
 // Theme dark and light toggle
 function themeCheck() {
   let lightMode = sections[0].classList.contains("light-mode");
+
+  // Change button icon according to theme;
   if (lightMode) {
     themeBtn.innerHTML = `<i class="fa fa-moon-o" aria-hidden="true"></i>`;
   } else {
@@ -81,10 +86,8 @@ function themeToggle() {
 }
 themeToggle();
 
+///////////////////
 // Modal window for project information
-
-// Variables
-let currentModal = "";
 
 const openModal = function (e) {
   e.preventDefault();
